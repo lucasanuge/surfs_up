@@ -18,3 +18,19 @@ As we see from the distribution of the histrogram for the temperature on the mon
 </br>
 ![December_summary](december_summary.PNG)
 ## Summary
+We would like to group the stations and see the average temperature of in the stations during the months of June and December. The code for the month of June is the following:
+</br>
+> results = []
+> results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 12).group_by(Measurement.station).all()
+> df = pd.DataFrame(results, columns= ['station', 'temperature'])
+> df.set_index(df['station'], inplace = True)
+> df = df.sort_index()
+> df 
+The code for the month of December is the following:
+</br>
+> results = []
+> results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 6).group_by(Measurement.station).all()
+> df = pd.DataFrame(results, columns= ['station', 'temperature'])
+> df.set_index(df['station'], inplace = True)
+> df = df.sort_index()
+> df 
