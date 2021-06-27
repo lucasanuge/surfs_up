@@ -14,4 +14,7 @@ As we see from the histogram plot of the temperature on the month of June from t
 </br>
 ### month of December
 ![December_Hist](hist_december.PNG)
+As we see from the distribution of the histrogram for the temperature on the month of December, it is nearly normal with no outliers. We can also apply the emperical rule and say that 99.7% of our observations are within 3 standard deviation of the mean. In the month of December, the mean temperature is 71 degrees Fahrenheit. the standard deviation is 3.75 degrees fahrenheit. This shows that the temperature on the month of December is between 59.75 and 82.25 degrees Fahrenheit. The summary statistics support this finding and is shown below.
+</br>
+![December_summary](december_summary.PNG)
 ## Summary
