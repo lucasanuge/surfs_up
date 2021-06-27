@@ -22,7 +22,7 @@ We would like to group the stations and see the average temperature of in the st
 </br>
 ```python
 results = []
-results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 12).group_by(Measurement.station).all()
+results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 6).group_by(Measurement.station).all()
 df = pd.DataFrame(results, columns= ['station', 'temperature'])
 df.set_index(df['station'], inplace = True)
 df = df.sort_index()
@@ -32,7 +32,7 @@ The code for the month of December is the following:
 </br>
 ```python
 results = []
-results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 6).group_by(Measurement.station).all()
+results = session.query(Measurement.station, func.avg(Measurement.tobs)).filter(extract('month', Measurement.date) == 12).group_by(Measurement.station).all()
 df = pd.DataFrame(results, columns= ['station', 'temperature'])
 df.set_index(df['station'], inplace = True)
 df = df.sort_index()
