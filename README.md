@@ -18,6 +18,9 @@ As we see from the distribution of the histrogram for the temperature on the mon
 </br>
 ![December_summary](december_summary.PNG)
 ## Summary
+Our results shows that throughout the months of June and December, the temperature are not as extreme as they are precieved to be (i.e. too hot or too cold). The temperature ranges are quite similar between the two months and seems to be suitable for surfing and ince creams. Hence, we can safely say that investing in the surf and ice cream shop is a safe investment as weather during these peek months are acceptable or even preffereable to most people who enjoy surfing and having ice creams.
+
+### Additional queries
 We would like to group the stations and see the average temperature of in the stations during the months of June and December. The code for the month of June is the following:
 </br>
 ```python
